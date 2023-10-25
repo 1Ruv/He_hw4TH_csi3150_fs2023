@@ -3,7 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Used Car Sales</title>
   </head>
-  <body></body>
+  <body>
+    <div class="filter">
+      <label for="minYear">Min. Car Year:</label>
+      <input type="number" id="minYear" />
+
+      <label for="maxYear">Max. Car Year:</label>
+      <input type="number" id="maxYear" />
+
+      <button onclick="filterCars()">Apply Filters</button>
+      <button onclick="resetFilter()">Reset Filters</button>
+    </div>
+
+    <div id="carListings" class="car-listings"></div>
+
+    <script src="./js/app.js"></script>
+  </body>
 </html>
