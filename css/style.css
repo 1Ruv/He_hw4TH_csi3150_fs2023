@@ -14,8 +14,13 @@ body {
   width: 200px;
 }
 
-.car-listings::after {
-  content: "";
-  display: table;
-  clear: both;
+.car-listings {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  flex-shrink: 3;
+  flex-flow: space-between;
+  align-items: stretch;
 }

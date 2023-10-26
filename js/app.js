@@ -1,4 +1,4 @@
-import usedCars from "./usedCars";
+import usedCars from "./usedCars.js";
 
 const carListingsContainer = document.getElementById("carListings");
 
@@ -10,10 +10,14 @@ function displayCars(cars) {
     const carCard = document.createElement("div");
     carCard.className = "car-card";
     carCard.innerHTML = `
+        <img src="${car.img}" alt="${car.make} ${car.model} Image">
+        <hr>
         <strong>${car.year} ${car.make} ${car.model}</strong>
         <p>Price: $${car.price}</p>
-        <p>Mileage: ${car.mileage} miles</p>
         <p>Color: ${car.color}</p>
+        <p>Mileage: ${car.mileage} miles</p>
+        <p>MPG: ${car.gasMileage}</p>
+        <button type="button" class="btn btn-outline-primary">More Details</button>
         `;
     carListingsContainer.appendChild(carCard);
   });
@@ -40,7 +44,7 @@ function resetFilters() {
   document.getElementById("minYear").value = "";
   document.getElementById("maxYear").value = "";
 
-  displayCars(cars);
+  displayCars(usedCars);
 }
-
-displayCars(cars);
+console.log("Used Cars data:", usedCars);
+displayCars(usedCars);
