@@ -1,21 +1,35 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 20px;
+  color: black;
+}
+
+.title {
+  text-align: center;
+  font-size: 24pt;
 }
 
 .filter {
   margin-bottom: 20px;
 }
 
-.car-card {
+.filterhidden {
+  display: none;
+}
+
+.carCard {
   border: 1px solid black;
   padding: 10px;
   margin: 10px;
   width: 200px;
 }
 
+.filter-container {
+  align-items: center;
+}
+
 .car-listings {
-  width: 85%;
+  width: 100%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -23,4 +37,8 @@ body {
   flex-shrink: 3;
   flex-flow: space-between;
   align-items: stretch;
+}
+
+.year-range-container {
+  text-align: center;
 }

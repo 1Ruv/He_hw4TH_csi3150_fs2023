@@ -9,19 +9,63 @@
     <title>Used Car Sales</title>
   </head>
   <body>
-    <div class="filter">
-      <label for="minYear">Min. Car Year:</label>
-      <input type="number" id="minYear" />
+    <h1 class="title">Used Car Sales</h1>
+    <!--slider button for filter-->
+    <div class="filter-container">
+      <label for="yearFilter">Years:</label>
+      <input
+        type="range"
+        id="yearFilter"
+        placeholder="Enter year"
+        min="2014"
+        max="2020"
+        value="2014"
+        oninput="this.nextElementSibling.value = this.value"
+      />
+      <output id="yearFilter">2014</output>
 
-      <label for="maxYear">Max. Car Year:</label>
-      <input type="number" id="maxYear" />
+      <label for="priceFilter">Price:</label>
+      <input
+        type="range"
+        id="priceFilter"
+        placeholder="Enter year"
+        min="12000"
+        max="100000"
+        value="1200"
+        oninput="this.nextElementSibling.value = this.value"
+      />
+      <output id="priceFilter">12000</output>
 
-      <button onclick="filterCars()">Apply Filters</button>
-      <button onclick="resetFilters()">Reset Filters</button>
+      <label for="mileageFilter">Mileage:</label>
+      <input
+        type="range"
+        id="yearFilter"
+        placeholder="Enter year"
+        min="18000"
+        max="50000"
+        value="25000"
+        oninput="this.nextElementSibling.value = this.value"
+      />
+      <output id="mileageFilter">18000</output>
+
+      <label for="makeFilter">Make:</label>
+      <select id="makeFilter">
+        <option value="None">None</option>
+        <option value="BMW">BMW</option>
+        <option value="Cadillac">Cadillac</option>
+      </select>
+
+      <label for="modelFilter">Model:</label>
+      <input type="text" id="modelFilter" placeholder="Enter model" />
+
+      <button id="appFiltersBtn">Apply Filters</button>
+      <button id="resetFilterBtn">Reset Filters</button>
     </div>
 
+    <!-- showing the all the cars -->
     <div id="carListings" class="car-listings"></div>
 
     <script type="module" src="./js/app.js"></script>
+    <script type="module" src="./js/scripts.js"></script>
   </body>
 </html>

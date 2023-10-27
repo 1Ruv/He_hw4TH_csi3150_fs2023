@@ -8,7 +8,8 @@ function displayCars(cars) {
 
   cars.forEach((car) => {
     const carCard = document.createElement("div");
-    carCard.className = "car-card";
+    carCard.className = "carCard";
+    carCard.id = `${car.model} - ${car.make}`;
     carCard.innerHTML = `
         <img src="${car.img}" alt="${car.make} ${car.model} Image">
         <hr>
@@ -23,28 +24,5 @@ function displayCars(cars) {
   });
 }
 
-function filterCars() {
-  const minYear = parseInt(document.getElementById("minYear").value) || 2005;
-  const maxYear =
-    parseInt(document.getElementById("maxYear").value) || Infinity;
-
-  const filteredCars = usedCars.filter(
-    (car) => car.year >= minYear && car.year <= maxYear
-  );
-
-  if (filteredCars.length === 0) {
-    carListingsContainer.innerHTML =
-      "<p>No cars match the filter criteria.</p>";
-  } else {
-    displayCars(filteredCars);
-  }
-}
-
-function resetFilters() {
-  document.getElementById("minYear").value = "";
-  document.getElementById("maxYear").value = "";
-
-  displayCars(usedCars);
-}
-console.log("Used Cars data:", usedCars);
+// Display of all cars
 displayCars(usedCars);
