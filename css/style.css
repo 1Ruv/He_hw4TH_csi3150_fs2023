@@ -25,11 +25,12 @@ body {
 }
 
 .filter-container {
-  align-items: center;
+  width: 20%;
+  float: left;
 }
 
 .car-listings {
-  width: 100%;
+  width: 75%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -37,6 +38,7 @@ body {
   flex-shrink: 3;
   flex-flow: space-between;
   align-items: stretch;
+  float: right;
 }
 
 .year-range-container {
