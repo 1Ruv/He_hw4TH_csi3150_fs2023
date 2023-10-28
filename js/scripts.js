@@ -14,6 +14,7 @@ function applyFilters() {
   const yearFilter = Number(document.getElementById("yearFilter").value);
   const priceFilter = Number(document.getElementById("priceFilter").value);
   const mileageFilter = Number(document.getElementById("mileageFilter").value);
+  //const makeFilter = document.getElementById("makeFilter").value;
 
   usedCars.forEach((car) => {
     id = `${car.model} - ${car.make}`;
