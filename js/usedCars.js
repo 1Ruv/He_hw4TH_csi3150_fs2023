@@ -68,7 +68,7 @@ const usedCars = [
     price: 16000,
     color: "Silver",
     gasMileage: "30 mpg city, 41 mpg highway",
-    img: "./img/hyundai.webp",
+    img: "./img/Hyundai.webp",
   },
   {
     year: 2014,
