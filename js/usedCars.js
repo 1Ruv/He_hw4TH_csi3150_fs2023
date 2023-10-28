@@ -37,7 +37,7 @@ const usedCars = [
     price: 17000,
     color: "Blue",
     gasMileage: "27 mpg city, 36 mpg highway",
-    img: "../img/Nissan.jpg",
+    img: "../img/Nissan.webp",
   },
   {
     year: 2015,
@@ -47,7 +47,7 @@ const usedCars = [
     price: 12000,
     color: "Red",
     gasMileage: "25 mpg city, 37 mpg highway",
-    img: "../img/Chevrolet.jpg",
+    img: "../img/Chevrolet.webp",
   },
   // Additional entries:
   {
@@ -119,7 +119,7 @@ const usedCars = [
     price: 32000,
     color: "Red",
     gasMileage: "19 mpg city, 27 mpg highway",
-    img: "../img/Cadillac.jpg",
+    img: "../img/Cadillac.webp",
   },
   {
     year: 2018,
@@ -159,7 +159,7 @@ const usedCars = [
     price: 26000,
     color: "White",
     gasMileage: "21 mpg city, 30 mpg highway",
-    img: "../img/Lexus.jpg",
+    img: "../img/Lexus.webp",
   },
   {
     year: 2016,
