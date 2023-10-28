@@ -58,7 +58,7 @@ const usedCars = [
     price: 15000,
     color: "Gray",
     gasMileage: "29 mpg city, 40 mpg highway",
-    img: "./img/Volkswagen.webp",
+    img: "./img/Volkswagon.webp",
   },
   {
     year: 2020,
