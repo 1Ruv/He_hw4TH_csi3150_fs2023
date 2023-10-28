@@ -11,7 +11,7 @@ function displayCars(cars) {
     carCard.className = "carCard";
     carCard.id = `${car.model} - ${car.make}`;
     carCard.innerHTML = `
-        <img src="${car.img}" alt="${car.make} ${car.model} Image">
+        <img src="${car.make}.webp" alt="${car.make} ${car.model} Image">
         <hr>
         <strong>${car.year} ${car.make} ${car.model}</strong>
         <p>Price: $${car.price}</p>
