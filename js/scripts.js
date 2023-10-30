@@ -14,7 +14,8 @@ function applyFilters() {
   const yearFilter = Number(document.getElementById("yearFilter").value);
   const priceFilter = Number(document.getElementById("priceFilter").value);
   const mileageFilter = Number(document.getElementById("mileageFilter").value);
-  //const makeFilter = document.getElementById("makeFilter").value;
+  const colorFilter = document.getElementById("colorFilter").value;
+  const makeFilter = document.getElementById("makeFilter").value;
 
   usedCars.forEach((car) => {
     id = `${car.model} - ${car.make}`;
@@ -29,9 +30,12 @@ function applyFilters() {
     if (car.mileage > mileageFilter) {
       car.classname = "carCard filterhidden";
     }
-    //if (car.make !== makeFilter) {
-    //  car.className = "carCard filterhidden";
-    //}
+    if (car.color !== colorFilter) {
+      car.classname = "carCard filterhidden";
+    }
+    if (car.make == makeFilter) {
+      car.classname = "carCard filterhidden";
+    }
     document.getElementById(id).className = car.classname;
   });
 }
